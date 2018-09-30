@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My html bootsrap vue.js page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    
+    <div class="container p-2 solid-border">
+        <div id="app">
+      {{ message }}
+      </div>
+
+      <div id="app-2">
+        <span v-bind:title="message">
+          Наведи на меня курсор, чтобы увидеть значение title!
+          </span>
+      </div>
+
+      <div id="app-3">
+        <span v-if="seen">Сейчас меня видно</span>
+      </div>
+
+      <div id="app-4">
+        <ol>
+          <li v-for="todo in todos" class="border w-25 p-2">
+          {{ todo.text }} 
+          </li>        
+        </ol>
+      </div>
+
+      <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Перевернуть этот текст!</button>
+      </div>
+
+      <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row red-line">
+        <div class="col-sm">Colon1</div>
+        <div class="col-md">Colon2</div>
+        <div class="col-sm">Colon3</div>
+      </div>
+    </div>
+    <div class="container">
+      
+      <div class="row green-line">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row blue-line">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+      <div class="row red-line">
+        <div class="col-lg">
+          One big column
+        </div>
+      </div>
+      
+    <script src="main.js" type="text/javascript"></script>
+    </body>
+    </html>

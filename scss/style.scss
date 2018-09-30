@@ -1,0 +1,235 @@
+$content-width: 1300px;
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    }
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+// **********************************************
+// wide screens
+// **********************************************
+
+@media (min-width: 960px) {
+    .top-gray-line {
+        background-color: #35393f;
+    }
+    .top-addr-container {
+        margin: auto;
+        max-width: $content-width;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: #35393f;
+        color: #8391a1;
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        padding: 0px 10px 0px;
+        
+        .top-addr {
+            color: #a5acb4;
+        }
+        .work-time {
+            color: silver;
+            text-decoration: underline;
+        }
+        .in-naks-registry {
+            display: inline;
+        }
+        .reg-name {
+            color: #a5acb4;
+            font-weight: bold;
+            display: inline;
+        }
+    }
+    .white-header {
+        margin: auto;
+        width: $content-width;
+        height: 115px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .logo {
+        padding: 30px 10px 30px;
+        width: 300px;
+    }
+
+    .email-and-login-area {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .org-phone {
+        color: black;
+        font-weight: bold;
+        // padding: 0px 10px;
+        margin-right: 17px;
+        width: 140px;
+    }
+
+    .org-email {
+        color: #787878;
+        // padding: 0px 10px;
+        margin-right: 17px;
+        width: 170px;
+    }
+
+    .send-message-button {
+        text-align: center;
+        // padding: 0px 10px;
+        margin-right: 27px;
+        border-style: solid;
+        border-color: rgb(121, 121, 121);
+        border-width: 1px;
+        border-radius: 3px;
+        width: 163px;
+        height: 44px;
+        line-height: 44px;
+    }
+
+    .edo-naks-login-button {
+        border: solid 1px rgb(1, 115, 204);
+        border-radius: 3px;
+        height: 44px;
+        width: 232px;
+        line-height: 44px;
+        text-align: center;
+        color: #0173cc;
+    }
+
+    .main-cont {
+        margin: auto;
+        width: $content-width;
+        height: 646px;
+        background-color: silver;
+        // background-image: url(../img/bg-pic.png);
+        // clip: rect(0px, $content-width, 646px, 0px);
+        border-bottom: #35393f 1px solid;
+    }
+    
+    .content {
+        margin: auto;
+        border-bottom: #35393f solid 1px;
+        height: 300px;
+    }
+}
+
+// **********************************************
+// middle screens
+// **********************************************
+
+@media all and (max-width: 959px){
+    .top-addr-container {
+        background-color: #35393f;
+        color: #8391a1;
+        // font-size: 12px;
+        line-height: 45px;
+        letter-spacing: 1px;
+        padding: 0px 10px 0px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .top-addr {
+        color: #a5acb4;
+    }
+    .work-time {
+        color: silver;
+        text-decoration: underline;
+    }
+    .in-naks-registry {
+        display: inline;
+    }
+    .reg-name {
+        color: #a5acb4;
+        font-weight: bold;
+        display: inline;
+    }
+
+    .white-header {
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        padding: 30px 30px 30px;
+        width: 300px;
+        margin-right: 50px;
+    }
+    .email-and-login-area {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .org-phone {
+        color: black;
+        font-weight: bold;
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+
+    .org-email {
+        color: #787878;
+        padding: 10px 10px;
+    }
+
+    .send-message-button {
+        text-align: center;
+        margin-top: 10px;
+        border-style: solid;
+        border-color: rgb(121, 121, 121);
+        border-width: 1px;
+        border-radius: 3px;
+        width: 232px;
+        height: 44px;
+        line-height: 44px;
+    }
+
+    .edo-naks-login-button {
+        border: solid 1px rgb(1, 115, 204);
+        border-radius: 3px;
+        height: 44px;
+        width: 232px;
+        line-height: 44px;
+        text-align: center;
+        color: #0173cc;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .main-cont {
+        height: 646px;
+        background-color: silver;
+        // background-image: url(../img/bg-pic.png);
+        // clip: rect(0px, $content-width, 646px, 0px);
+        border-bottom: #35393f 1px solid;
+    }
+    
+    .content {
+        border-bottom: #35393f solid 1px;
+        height: 300px;
+    }
+}
+
+// **********************************************
+// small screens
+// **********************************************
